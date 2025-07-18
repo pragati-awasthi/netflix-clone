@@ -1,0 +1,446 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+}
+.main{
+     background-image: url("assets/images/bgnetflix.jpg");
+     background-size: cover;
+    height:100vh;
+   position: relative;
+}
+.main .box{
+    height:100vh;
+    background-repeat: no-repeat;
+    width:100%;
+    opacity:0.77;
+    background-color: black;
+    background-size:max(1200px,100vw);
+    position: absolute;
+}
+header{
+    max-width:80vw;
+    margin:auto;
+    height:90px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.netflixlogo{
+    height:40px;
+    width:380px;
+
+}
+.logo{
+    background-image: url("assets/images/logo.svg");
+    height:40px;
+    background-repeat:no-repeat;
+    position:relative;
+    z-index: 10;
+}
+.lang button{
+    position: relative;
+    padding:10px 20px;
+    border-radius: 5px;;
+    z-index:10;
+}
+
+.hero{
+    height:100%;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    gap:23px;
+font-family:Arial, Helvetica, sans-serif ,'Roboto','Segoe UI';
+}
+
+.hero> :first-child{
+    font-size:56px;
+    font-weight: 900;
+    text-align: center;
+    width:48%;
+}
+.hero> :nth-child(2){  /* immediate 2nd child  */
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+.hero> :nth-child(3){
+    font-size:16px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero input{
+    width:335px;
+     padding: 6px 24px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.2);
+    color:white;
+    height:38px;
+    font-weight: 800;
+    border:1.5px solid rgba(255, 255, 255, 0.458);
+}
+.hero-buttons{
+    display: flex;
+    gap:11px;
+}
+.seperation{
+    height: 100px;
+    width:100%;
+    border-top: 4px solid rgb(220, 72, 72);
+    border-radius:50% 50% 0 0;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.btn{
+    padding:3px 8px;
+    font-weight: bold;
+    background-color: white;
+    border:none;
+    
+}
+.btn-red{
+    padding: 4px 24px;
+    background-color: red;
+    color:white;
+    border-radius: 5px;
+    font-size: 22px;
+    width:208px;
+    height:50px;
+    text-align: center;
+}
+.btn-red-sm{
+     background-color: red;
+    color:white;
+      border-radius: 4px;
+}
+.lang> :first-child{
+    background-color: rgba(23,23,23,0.2);
+    color: white;
+    border:1.5px solid rgba(255, 255, 255, 0.458);
+}
+.Trendingshow{
+    margin-top:15px;
+    height:300px;
+    max-width:80vw;
+    display: flex;
+    overflow-x:auto;
+    overflow-y: hidden;
+    margin:auto;
+    scrollbar-color: rgba(0,0,0.5)transparent;
+    scrollbar-width: thin;
+    position: relative;
+}
+.heading2{
+    margin-top:30px;
+    color: white;
+    font-size: 24px;
+    padding:0px 145px;
+    margin-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.leftscroll{
+    
+    height:300px;
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    align-items: center; 
+  position: sticky;
+   left:0;
+   top:0;
+   z-index:10;
+   transition: all 4s ease-in-out;
+}
+
+
+.scrollbtn{
+     height:100px;
+     width:25px;
+     color:white;
+     border:none;
+     cursor: pointer;
+     font-size: 16px;;
+     border-radius: 30%;
+     background-color: #1a1a1a;
+}
+.rightscroll{
+    height:300px;
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    align-items: center;
+position: sticky;
+right:0;
+z-index: 10;
+transition: all 4s ease-in-out;
+}
+.showimages{
+    height:256px;
+    margin:20px;
+    display: flex;
+    gap:30px;
+     
+}
+.top10img img{
+    height:256px;
+    border-radius: 5px;
+    color:white; 
+
+}
+.top10img{
+    position: relative;
+}
+.numbering{
+    color:black;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    bottom:12px;
+    left: -24px;
+    font-size:100px;
+    font-weight: 800;
+    line-height: 100px;
+    font-family:Arial, Helvetica, sans-serif ,'Roboto','Segoe UI';
+    text-shadow:0 0 28px rgba(0, 0, 0, 0.5);
+}
+
+.section{
+    margin-top:20px;
+    height:350px;
+    display:flex;
+    gap:15px;
+    max-width:80vw;
+    margin:28px auto;
+}
+.sbox{
+    color:white;
+    width:320px;
+    height:250px;
+    border-radius: 12px;
+    padding:14px 18px;
+    background-color:#1d172d;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.sbox h3{
+    font-size: 24px;
+    
+}
+.sbox p{
+    padding-top: 15px;
+    font-size: 16px;
+    color:#FFFFFFB3;
+}
+.sbox-icon{
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    filter: drop-shadow(0 0 50px #9333ea);
+}
+
+@media screen and (max-width:1200px)
+{ 
+    .hero> :first-child{
+    
+    width:80vw;
+}
+
+    .section{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .faq{
+        margin-top:300px;
+    }
+}
+.faq{
+    color:white;
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.faq h2{
+    color:white;
+    font-size: 24px;
+    padding: 0px 145px;
+}
+.faqbox{
+    background-color:#2d2d2d;
+    color:white;
+    max-width:80vw;
+    margin: 28px auto;
+    font-size: 24px;
+    cursor:pointer;
+}
+.toggle-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#2d2d2d;
+    padding:24px;
+    border:none;
+    max-width:80vw;
+     font-size: 24px;
+    cursor:pointer;
+}
+
+.content{
+    display: none;
+    background-color:#2d2d2d;
+    color: white;
+      max-width:80vw;
+      padding:20px;
+      font-size:24px;
+      transition: all 250ms cubic-bezier(0.32,0.94,0.6,1);
+}
+
+/* .favbox svg{
+    filter:invert(1);
+}
+    */
+ .toggle-sec:hover{
+    background-color:#414141;
+ }
+ .togglebtn{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+ }
+.beforefoot{
+    width:80vw;
+    margin:40px auto;
+    font-family:Arial, Helvetica, sans-serif ,'Roboto','Segoe UI';
+    text-align: center;
+}
+.beforefoot span{
+    color: white;
+    font-size:18px;
+    font-weight: 400;
+    text-align: center;
+}
+.beforefoot input{
+    margin-top: 20px;
+    width:40vw;
+     padding: 6px 24px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.2);
+    color:white;
+    height:38px;
+    font-weight: 800;
+    border:1.5px solid rgba(255, 255, 255, 0.458);
+}
+footer{
+    color:white;
+    padding:0px 145px;
+}
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif ,'Roboto','Segoe UI';
+}
+.footer-item{
+    display:flex;
+    flex-direction: column;
+}
+
+.footer-item a{
+    color:#FFFFFFB3;
+    padding:10px;
+}
+@media screen and (max-width:800px)
+{
+    header{
+        width:90vw;
+        display: flex;
+        justify-content: space-around;
+    }  
+    
+    
+ .netflixlogo{
+    height:14px;
+    width:100px;
+}
+   
+.lang button{
+    
+    padding:5px 10px;
+}
+
+.hero> :first-child{
+    font-size:32px;
+    width:80vw;
+}
+    footer{
+        padding:0px 60px;
+    }
+    .footer{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .section{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+    .faq{
+        margin-top:750px;
+    }
+    .faq h2{
+        margin:10px;
+    font-size: 18px;
+    padding:0px 60px;
+    }
+    .sbox{
+        height:220px;
+        width:80vw;
+    }
+
+    .hero-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .heading2{
+    margin-top:30px;
+    color: white;
+    font-size: 24px;
+    padding:0px 60px;
+    margin-bottom: 10px;
+}
+}
+
+@media screen and (max-width:500px)
+{   
+
+    
+   
+.hero> :first-child{
+    font-size: 30px;
+}
+.hero input{
+    width:220px;
+}
+.btn-red{
+    width:150px;
+    font-size: 16px;;
+}
+.foot-buttons .btn-red{
+    margin-top: 10px;
+}
+.sbox{
+width:60vw;
+}
+}
